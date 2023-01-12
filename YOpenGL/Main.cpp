@@ -40,6 +40,7 @@ int main()
 	glfwSwapBuffers(window);
 
 	while (!glfwWindowShouldClose(window)) {
+		glfwSwapBuffers(window);
 		glfwPollEvents();
 	}
 
