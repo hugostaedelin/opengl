@@ -35,7 +35,7 @@ int main()
 	// Specify the viewport (from x = 0, y = 0 to x = 800,y = 800)
 	glViewport(0, 0, 800, 800);
 
-	glClearColor(0.07f, 0.13f, 0.17f, 1.0f);
+	glClearColor(1.0f, 0.50f, 0.50f, 1.0f);
 	glClear(GL_COLOR_BUFFER_BIT);
 	glfwSwapBuffers(window);
 
