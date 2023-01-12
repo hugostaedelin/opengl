@@ -1,6 +1,0 @@
-﻿  stdafx.cpp
-  Face.cpp
-D:\Travaux\pratique\23. tp_opengl-07-01-2019\Tete\Head\Head\Face.cpp(168,28): warning C4018: '<': signed/unsigned mismatch
-  testFace.cpp
-  Generating Code...
-  Head.vcxproj -> D:\Travaux\pratique\23. tp_opengl-07-01-2019\Tete\Head\Debug\Head.exe
