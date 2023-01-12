@@ -20,7 +20,7 @@ int main()
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
-	GLFWwindow* window = glfwCreateWindow(800, 800, "YOpenGL", NULL, NULL);
+	GLFWwindow* window = glfwCreateWindow(400, 225, "YOpenGL", NULL, NULL);
 
 	if (isWindowHasIssue(window)) {
 		showError();
@@ -32,8 +32,8 @@ int main()
 	// Load GLAD so it configures OpenGL
 	gladLoadGL();
 
-	// Specify the viewport (from x = 0, y = 0 to x = 800,y = 800)
-	glViewport(0, 0, 800, 800);
+	// Specify the viewport (from x = 0, y = 0 to x = 400,y = 225)
+	glViewport(0, 0, 400, 225);
 
 	glClearColor(1.0f, 0.50f, 0.50f, 1.0f);
 	glClear(GL_COLOR_BUFFER_BIT);
