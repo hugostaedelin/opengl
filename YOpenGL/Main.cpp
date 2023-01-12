@@ -20,7 +20,7 @@ int main()
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
-	GLFWwindow* window = glfwCreateWindow(400, 225, "Small orange window", NULL, NULL);
+	GLFWwindow* window = glfwCreateWindow(400, 225, "Small rainbow window", NULL, NULL);
 
 	if (isWindowHasIssue(window)) {
 		showError();
@@ -39,7 +39,17 @@ int main()
 	glClear(GL_COLOR_BUFFER_BIT);
 	glfwSwapBuffers(window);
 
+	float prev_time = float(glfwGetTime());
+	float a = 0.0f;
+
 	while (!glfwWindowShouldClose(window)) {
+		float time = float(glfwGetTime());
+		if (time - prev_time >= 0.1f) {
+			a += 0.1f;
+			prev_time = time;
+		}
+		glClearColor(float(sin(a)), float(cos(a)), float(tan(a)), 1.0f);
+		glClear(GL_COLOR_BUFFER_BIT);
 		glfwSwapBuffers(window);
 		glfwPollEvents();
 	}
